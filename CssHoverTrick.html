@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRICK PROFILE HOVER</title>
+<style>
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+.parent{
+    height: 380px;
+    width: 380px;
+    background-color: white;
+    box-shadow: 5px 5px 20px black;
+    text-align: center;
+    overflow: hidden;
+}
+
+.parent:hover > .myimg{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    transition: 1s; 
+}
+
+.myimg{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+</style>
+</head>
+<body>
+    
+<div class="parent">
+  <img src="download.png" alt="" class="myimg">
+    <h1>Something NAWA NAWA</h1>
+    <p>NOTHING PORANA PORANA VERSION UPDATED</p>
+</div>
+
+</body>
+</html>
